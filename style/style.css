@@ -32,3 +32,19 @@ body {
     padding: 10px 40px;
 }
 
+#main::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#nav {
+    width: 19.9999%;
+    float: left;
+}
+
+#content{
+    width: 79.9999%;
+    float: left;
+}
+
