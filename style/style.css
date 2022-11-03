@@ -31,20 +31,74 @@ body {
     font-size: 4rem;
     padding: 10px 40px;
 }
-
-#main::after{
+#main{
+    background-color: #333030;
+}
+#main::after, p::after{
     content: "";
     clear: both;
     display: table;
 }
 
 #nav {
-    width: 19.9999%;
+    width: 19.9999999%;
     float: left;
 }
 
 #content{
-    width: 79.9999%;
+    width: 79.9999999%;
     float: left;
+    background-color: #fff;
+    padding: 15px;
 }
 
+#nav ul{
+    list-style-type: none;
+    padding: 30px 20px; 
+}
+#nav ul li{
+    border-bottom: 1px dashed #fff;
+}
+#nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 0;
+    display: block;
+}
+#nav a:hover{
+    padding-left: 15px;
+    background-color: rgba(255,255,255,0.2);
+}
+.right{
+    float: right;
+    margin-left: 10px;
+}
+.left{
+    float: left; 
+    margin-right: 15px; 
+}
+#content h2 span{
+    margin: 15px 0;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: green;
+    line-height: 1.3;
+    border-left: 10px solid green;
+    border-right: 10px solid green;
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+     box-decoration-break: clone;
+     color: #fff;
+}
+#content p{
+    padding-bottom: 15px;
+}
+#footer{
+    padding: 20px 0;
+}
+#footer p:first-child{
+    float: left;
+}
+#footer p:last-child{
+    float: right;
+}
