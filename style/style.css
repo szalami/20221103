@@ -16,25 +16,25 @@ body {
 
 #header {
     height: 255px;
-    background: url(../pics/bg-header.jpg);
+    background: url(../pics/bg-header.jpg);   
 }
-
 #container{
     max-width: 1000px;
     width: 95%;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: -80px;
 }
-
 #header h1{
     color: #fff;
     font-size: 4rem;
-    padding: 10px 40px;
+    padding: 90px 40px 10px 40px;
 }
 #main{
     background-color: #333030;
 }
-#main::after, p::after{
+#main::after, p::after, footer p::after {
     content: "";
     clear: both;
     display: table;
@@ -49,7 +49,7 @@ body {
     width: 79.9999999%;
     float: left;
     background-color: #fff;
-    padding: 15px;
+    padding: 30px 25px;
 }
 
 #nav ul{
@@ -59,7 +59,7 @@ body {
 #nav ul li{
     border-bottom: 1px dashed #fff;
 }
-#nav a{
+#nav a {
     text-decoration: none;
     color: #fff;
     padding: 15px 0;
@@ -90,15 +90,24 @@ body {
      box-decoration-break: clone;
      color: #fff;
 }
-#content p{
+#content p {
     padding-bottom: 15px;
 }
 #footer{
     padding: 20px 0;
+    margin-bottom: 20px;
 }
-#footer p:first-child{
+#footer p {
     float: left;
 }
-#footer p:last-child{
+#footer li {
+    list-style-type: none;
     float: right;
+}
+#footer a {
+    text-decoration: underline;
+    color: #000;   
+}
+#footer span::before, #footer span::after {
+    content: "\00a0";
 }
